@@ -1,0 +1,13 @@
+steps:
+  # Step 1: Build Docker image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      ["build", "-t", "gcr.io/centered-cursor-392711/simmer/restaurant:twilio75", "."]
+
+  # Step 2: Push Docker image to Container Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/centered-cursor-392711/simmer/restaurant:twilio75"]
+
+logsBucket: "gs://build-log-s/simmer"
+# options:
+#   logging: CLOUD_LOGGING_ONLY

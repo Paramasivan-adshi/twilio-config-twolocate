@@ -1,0 +1,31 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: twilio
+#   labels:
+#     app: twilio
+# spec:
+#   type: LoadBalancer
+#   ports:
+#     - name: twilio
+#       port: 80
+#       targetPort: 5000
+#   selector:
+#     app: twilio
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: twilio
+  namespace: restaurant
+  labels:
+    app: twilio
+spec:
+  type: NodePort
+  ports:
+    - name: twilio
+      port: 80
+      targetPort: 5000
+      nodePort: 30090  # Specify the desired nodePort value here
+  selector:
+    app: twilio

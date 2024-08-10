@@ -1,0 +1,101 @@
+{
+ "+14155490811": {
+        "forward_number": ["+17075935808"],
+        "forward_number1": ["+17076575319"],
+        "ivr_prompt": { "voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20Restaurant%20Main/YetiMainChange.mp3" },
+        "available_ivr_options": ["ivr_1", "ivr_2"],
+        "ivr_options": {
+            "ivr_1": {
+                "voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20Restaurant%20Main/YetiMainSantaRosatransfer.mp3",
+                "type": "call",
+                "forward": true
+            },
+            "ivr_2": {
+                "voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20Restaurant%20Main/YetiMainGlenEllenTransfer.mp3",
+                "forward1": true
+            }
+        },
+        "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20Restaurant%20Main/YetiMainInvalidChange.mp3"},
+        "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantaroseCallconnect.mp3", "last_ivr_options": ["ivr_5"], "forward_interval_time_sec": 1800},
+        "thankyouMessage": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenthankyou.mp3"}
+    },
+    "+19259318387":{
+      "forward_number": ["+19259308088","+19259308089"],
+      "ivr_prompt": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenwelcomepropmpts.mp3" },
+      "available_ivr_options": ["ivr_1", "ivr_2", "ivr_3","ivr_4","ivr_5","ivr_0"],
+      "ivr_options":{
+        "ivr_1": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardencallconnectteam.mp3", "type": "call order", "forward": true},
+        "ivr_2": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenordermenu.mp3", "message":  "To place your order with Peony Garden,\nplease visit\nhttps://m.chinesemenu.com/us/304817527", "type": "order"},
+        "ivr_3": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenreservationlink.mp3", "message":  "To place your order (reservation) with Peony Garden\nplease visit\nhttps://www.google.com/maps/reserve/v/dine/c/JWQCdu_xB8g?source=pa&opi=89978449&hl=en-US&gei=ADgQZoSNI7-D0PEPwfqIwAs&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dpeony%2Bgarden%2Bwalnut%2Bcreek%2C%2Bca%26oq%3Dpeony%2Bgarden%2Bwalnut%2Bcreek%2C%2Bca%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIGCAMQRRhAMg0IBBAAGIYDGIAEGIoFMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgYIBxBFGDzSAQoxMTE2NGowajE1qAIIsAIB%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=1", "type": "reservation"},
+        "ivr_4": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenaddressvoiceout.mp3", "message":  "Please click on the link https://www.google.com/maps/dir//1448+S+Main+St,+Walnut+Creek,+CA+94596,+United+States/@37.8915157,-122.1400144,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808561dcdab77345:0xbc14273aee81a8b9!2m2!1d-122.0577098!2d37.8915203?entry=ttu to get directions to the restaurant.", "type": "direction"},
+        "ivr_5": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardencallconnectteam.mp3", "type": "call", "forward": true},
+        "ivr_0": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenmainmenurepeat.mp3", "mainMenu": true}
+  
+      },
+      "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardeninvalidvoice.mp3"},
+      "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardendirectcallconnect.mp3", "last_ivr_options": ["ivr_1","ivr_5"], "forward_interval_time_sec": 1800},
+      "thankyouMessage": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenthankyou.mp3"}
+    },
+    "+14259064038":{
+      "forward_number": ["+14259087357"],
+      "ivr_prompt": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/ShawarmaWelcomewithlocation.mp3" },
+      "available_ivr_options": ["ivr_1", "ivr_2", "ivr_3","ivr_0"],
+      "ivr_options":{
+        "ivr_1": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/Shawarmabothelordermenu.mp3","message":  "To place your order with Shawarma Time in Bothell,\nplease visit\nhttps://food.google.com/chooseprovider?restaurantId=/g/11vjhhpp75&g2lbs=AIQllVw3IxitZL63tKiBwgLLodtffUDpw0QwN_Zuer04SrclPqnLM2OgngqUVBNUr7YEtkGxeoiRZ7UC3qtPxza4lEw9a6HQgmUi87Z5h_XNaYQvAx5ulhk%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=JvciZoKrGp-D0PEP7sSeoAs&ei=JvciZoKrGp-D0PEP7sSeoAs&opi=89978449&foub=mcpp&sa=X&ved=2ahUKEwiC1ti9sM-FAxWfATQIHW6iB7QQjYwDKAB6BAg6EAg&addressId&orderType=2&partnerId=02966185379359903991&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&sei=Cdof-OXFpIGpER8Z0JggGT4G&utm_campaign&utm_source=search", "type": "order"},
+        "ivr_2": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/Shawarmabothelcallconnect.mp3", "type": "call", "forward": true},
+        "ivr_3": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/Shawarmabotheldirection.mp3", "message":  "Please click on the link https://www.google.com/maps/place/Shawarma+Time/@47.8107291,-122.2068404,15z/data=!4m2!3m1!1s0x0:0xa31f86d1c0fc801f?sa=X&ved=1t:2428&ictx=111 to get directions to the restaurant.", "type": "direction"},
+        "ivr_0": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/ShawarmaTimeRepeat.mp3", "mainMenu": true}
+      },
+      "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/Shawarmabothelinvalid.mp3"},
+      "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/Shawarmabothelcallconnect.mp3", "last_ivr_options": ["ivr_2"], "forward_interval_time_sec": 1800},
+      "thankyouMessage": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/ShawarmatimeBothel/ShawarmaThankyou.mp3"}
+    },
+    "+12066724143":{
+      "forward_number": ["+12067232384"],
+      "ivr_prompt": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashWelcomenewvoice.mp3" },
+      "available_ivr_options": ["ivr_1", "ivr_2", "ivr_3","ivr_0"],
+      "ivr_options":{
+        "ivr_1": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerordermenu.mp3","message":  "To place your order with SMA5H,\nplease visit\nhttps://www.toasttab.com/local/order/smash-bros-martin-luther-king-junior-way-south-suite-107/r-e8283968-a5e1-4fd1-b153-cf9d2c108a9d?diningOption=delivery&rwg_token=AAh05qbrtCZi0XhbXdqofrRfKIQ6N9ULfaBKp7Mjs9wH-mLk8VtX3yb8K206IF2OJkcuAWvbrsEQCOdzyOxJnDCSz6NAMrqjuA%3D%3D", "type": "order"},
+        "ivr_2": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerCallconnect.mp3", "type": "call", "forward": true},
+        "ivr_3": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerdirection.mp3", "message":  "Please click on the link https://www.google.com/maps/place/SMA5H/@47.5384612,-122.2827492,15z/data=!4m2!3m1!1s0x0:0xfcc7e313dd9be65d?sa=X&ved=1t:2428&ictx=111 to get directions to the restaurant.", "type": "direction"},
+        "ivr_0": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerRepeat.mp3", "mainMenu": true}
+      },
+      "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerInvalidinput.mp3"},
+      "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerCallconnect.mp3", "last_ivr_options": ["ivr_2"], "forward_interval_time_sec": 1800},
+      "thankyouMessage": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/SmashBurger/SmashBurgerThankyou.mp3"}
+    },
+    "+17076575319":{  
+      "forward_number": ["+17079969930"],
+      "forward_number1": ["+14155490811"],
+      "ivr_prompt": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetiGlenChanges/YetiGlennwelcomeChange.mp3"},
+      "available_ivr_options": ["ivr_1", "ivr_2", "ivr_3","ivr_4","ivr_5","ivr_6"], 
+      "ivr_options":{
+        "ivr_1": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantOrdersms.mp3","message":  "To place your order with Yeti Restaurant in Glen Ellen,\nplease visit\nhttps://yetiglenellen.imenutogo.com/embed/menu", "type": "sms order"},
+        "ivr_2": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantReservation.mp3", "message":  "To place your order (reservation) with Yeti Restaurant in Glen Ellen,\nPlease visit\nhttps://www.opentable.com/yeti-indian-cuisine-restaurant", "type": "reservation order"},
+        "ivr_3": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantahours.mp3", "message":  "Our hours of operations are\n\nMonday to Thursday:\n11:30 am to 2:30 pm,\n4:30 pm to 9 pm\n\nFriday to Sunday:\n11:30 am to 9 pm.\n\nPlease click on the link https://www.google.com/maps/place/Yeti+Restaurant/@38.3544509,-122.5270197,17z/data=!3m1!4b1!4m6!3m5!1s0x808452b0381d1555:0x1e51b7a8f512345d!8m2!3d38.3544509!4d-122.5244448!16s%2Fg%2F1vmr1lsl?entry=ttu to get directions to the restaurant.", "type": "direction"},
+        "ivr_4": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantaCatering.mp3", "message":  "To place your catering order with Yeti Restaurant in Glen Ellen,\nplease visit\nhttps://docs.google.com/document/d/e/2PACX-1vRMoDxHsFUXq0hnYBV5oTfP2elQXh89TjmFdvkGVAFc9fhmgFXXbAycBYKJvTYEG40Hleu3DHUzE0mX/pub and email the given details to yeti@yeticuisine.com", "type": "catering order"},
+        "ivr_5": {"type": "call", "forward": true},
+        "ivr_6": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetisantaChanges/YetiSantaMaintransfer.mp3", "type": "call", "forward1": true}
+      },
+      "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetiGlenChanges/YetiGlenninvalid.mp3"},
+      "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti-Glen-Ellen/YetiGlencalltransfer.mp3", "last_ivr_options": ["ivr_5"], "forward_interval_time_sec": 1800},
+      "thankyouMessage": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenthankyou.mp3"}
+    },
+    "+17075935808":{  
+      "forward_number": ["+17075219608"],
+      "forward_number1": ["+14155490811"],
+      "ivr_prompt": {"voice":"https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetiGlenChanges/YetiSantaMainchange.mp3" },
+      "available_ivr_options": ["ivr_1", "ivr_2", "ivr_3","ivr_4","ivr_5","ivr_6"], 
+      "ivr_options":{
+        "ivr_1": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantOrdersms.mp3","message":  "To place your order with Yeti Restaurant in Santa Rosa,\nplease visit\nhttps://yetisantarosa.imenutogo.com/embed/menu", "type": "sms order"},
+        "ivr_2": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantReservation.mp3", "message":  "To place your order (reservation) with Yeti Restaurant in Santa Rosa,\nPlease visit\nhttps://www.opentable.com/yeti-indian-cuisine-restaurant", "type": "reservation order"},
+        "ivr_3": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantahours.mp3", "message":  "Our Hours of operation are\n\nMonday to Sunday: 11:00 am - 9:30 pm,\n\nPlease click on the link https://www.google.com/maps/place/Yeti+Restaurant/@38.450334,-122.6924427,17z/data=!3m1!4b1!4m6!3m5!1s0x808447d912794555:0xd9080772110889dd!8m2!3d38.4503299!4d-122.6878293!16s%2Fg%2F11bydkvfr0?entry=ttu to get directions to the restaurant.", "type": "direction"},
+        "ivr_4": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantaCatering.mp3", "message":  "To place your catering order with Yeti Restaurant in Santa Rosa,\nplease visit\nhttps://docs.google.com/document/d/e/2PACX-1vRMoDxHsFUXq0hnYBV5oTfP2elQXh89TjmFdvkGVAFc9fhmgFXXbAycBYKJvTYEG40Hleu3DHUzE0mX/pub and email the given details to yeti@yeticuisine.com", "type": "catering order"},
+        "ivr_5": {"type": "call", "forward": true},
+        "ivr_6": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetisantaChanges/YetiSantaMaintransfer.mp3", "type": "call", "forward1": true}
+      },
+      "invalid": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/YetiGlenChanges/YetiGlenninvalid.mp3"},
+      "ivr_forward": {"voice": "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Yeti%20San%20rosa/YetiRestaurantSantaroseCallconnect.mp3", "last_ivr_options": ["ivr_5"], "forward_interval_time_sec": 1800},
+      "thankyouMessage": {"voice":  "https://storage.googleapis.com/simmerpublic/RestaurantVoices/Peonygarden/Peonygardenthankyou.mp3"}
+    }
+}

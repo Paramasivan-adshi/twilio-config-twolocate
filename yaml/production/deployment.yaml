@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twilio
+  namespace: restaurant
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: twilio
+  template:
+    metadata:
+      labels:
+        app: twilio
+    spec:
+      containers:
+        - name: twilio
+          image: gcr.io/centered-cursor-392711/simmer/restaurant:twilio75 #callforwardoneivr6added
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "0.5"
+            limits:
+              memory: "2Gi"
+              cpu: "1"
+          ports:
+            - containerPort: 5000
+      restartPolicy: Always

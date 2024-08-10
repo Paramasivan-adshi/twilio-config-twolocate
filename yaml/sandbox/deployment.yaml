@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twiliosand
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: twiliosand
+  template:
+    metadata:
+      labels:
+        app: twiliosand
+    spec:
+      containers:
+        - name: twiliosand
+          image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.8 #sandbox
+          # image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.7 #sandbox
+          # image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.6 #sandbox
+          # image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.4 #sandbox
+          # image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.3 #proucton
+          # image: gcr.io/centered-cursor-392711/simmer/restaurant:twiliosand1.0.1 #april23smashburgerchanges
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "0.5"
+            limits:
+              memory: "2Gi"
+              cpu: "1"
+          ports:
+            - containerPort: 5000
+      restartPolicy: Always
